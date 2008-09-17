@@ -1,0 +1,33 @@
+#labels Featured
+= Overview of CloudMaster  =
+
+CloudMaster provides control and monitoring of Amazon Web Services (AWS) Elastic Compute Cloud (EC2) computational resources.  It manages _pools_ of identical servers, running in the EC2 "compute cloud".  It is monitors the demand for services, and increases or decreases the pool size accordingly.
+
+CloudMaster typically runs on your own server, not on EC2.  This way you do not have to pay for a constantly-running server when your pool services only occasional requests.  CloudMaster provides periodic reports, which can be redirected to a log file for unattended operation.
+
+= Features =
+
+CloudMaster provides these features:
+  * Manages any number of pools.
+  * Each pool is governed by a configurable set of policies.
+  * Configuration is done through an init file.
+  * Several models of server behavior are supported: others can be added.
+  * It communicates with the instances through Simple Queue Servece (SQS) queues.
+  * The current set of running instances is made available through Simple Storage Service (S3).  This allows external entities to assign work to servers.
+  * Log messages sent by the instances are collected and displayed.
+
+= Acknowledgements =
+This project would not have been possible without James Murty's book _Programming Amazon Web Services_ (O'Reilly 2008).  It uses the access libraries he described in (and provided with) the book.  
+
+CloudMaster itself is inspired by Lifeguard (http://code.google.com/p/lifeguard), written by David Kavanagh. I redesigned and rewrote it in ruby, so that it could be used without having to install Java.  Many of my ideas were initially based on this design..
+ 
+= More Information =
+  * [ProjectSetup Try It Out]
+  * [HowSampleWorks How The Sample Applications Work]
+  * [HowCloudMasterWorks How CloudMaster Works]
+  * [RunningYourOwn Manage Your Own Instances]
+  * [ConfigurationFile Building A Configuration File]
+  * [MakeYourOwnPolicy Make Your Own Policy]
+  * [ProjectStructure Project Structure]
+  * [UsingTools Using AWS Tools]
+  * [FAQ Frequently Asked Questions]
