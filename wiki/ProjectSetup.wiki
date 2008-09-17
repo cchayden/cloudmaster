@@ -36,6 +36,6 @@ To set up the sample you have to get an Amazon Web Services account, enter your 
   * Set up environment EnvironmentSetUp
   * Set up AWS AwsSetup
   * Create images CreateImages
-  * Run CloudMaster RunCloudMaster
+  * Run !CloudMaster RunCloudMaster
   * Request primes RunPrimesCloudMaster
   * Request Fibonacci numbers RunFibCloudMaster
