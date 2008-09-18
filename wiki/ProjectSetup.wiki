@@ -8,7 +8,7 @@
 = Sample Servers =
 The two sample servers don't do anything very useful: they compute prime numbers and Fibonacci numbers.  Their purpose is to model typical server behavior, for instance transcoding video files and serving out the video streams.
 
-This shows the structure of the sample servers.  [http://chayden.net/InstanceManager/instance_manager.png]
+This shows the structure of the sample servers.  [http://chayden.net/CloudMaster/CloudMaster.png]
 
 == Primes ==
 The *primes* server models a batch process such as transcoding.  Each server monitors a _work queue_ containing requests to produce some number of prime numbers.  The server removes this request, computes the requested number of primes, and sends a status report containing the last of these numbers.
