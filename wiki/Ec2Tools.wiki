@@ -149,6 +149,38 @@ Reboot the given instance.  The instance is *not* stopped, and the hard disk con
 
 Get the contents of the system console of the given instance.  This is useful for diagnosing boot-time problems.
 
+== Volumes ==
+A volume is a piece of permanent storage that can be attached to a running instance.  Volumes are identified by a "vol-number".
+
+=== list-volumes ===
+{{{list-volumes}}}
+
+Lists all volumes in out EC2 account.  If the volume was created from a snapshot, that is listed next.  Then the cvolume size is given.  Finally, the zone that the volume is in and the status is listed.  If the status is "in-use" then the following line lists the attachment state, the image (i-number) and the device the volume is mountd on.
+
+{{{create-volume availability-zone size|snapshot-id}}}
+Creates a new volume.  Every volume must be created in an availability zone, such as "us-east-1c".  Either the size or a snapshot-id must be given.  If the size is given, the a new volume is created of the given size.  If a snapshot id is given (these start with "snap-") then the volume is created from the snapshot.
+
+{{{delete-volume volume-id}}}
+Deletes the volume given by the volume id.  
+
+{{{attach-volume volume-id instance-id device}}}
+Attaches a volume given by volume-id to the running instance given by instance-id.  The volume is associated with the given device.  Typically device would be something like "dev/sdh".
+
+{{{detach-volume volume-id}}}
+Detaches the volume given by volume-id from the instance it is attached to.  The volume should be unmounted before this is done, to avoid corrupting the file system.
+
+== Snapshots ==
+A snapshot is a copy of the information on a volume.  Snapshots are stored in S3, and may be used to create new volumes.   Although the volume itself is persistent, the snapshot provides a way to recover if the volume store fails.  In addition, snapshots perovide a way to make a second volume that is identical to the first.
+
+{{{list-snapshots}}}
+Displays all the snapshots in your account.  For each snapshot, its volume id is given, and also the status and progress indicators.  Usually these will be "completed" and "100%" but could be different while the snapshot is being made.
+
+{{{create-snapshot volume-id}}}
+Creates a snapshot given the volume id.  The resulting snapshot id is displayed.
+
+{{{delete-snapshot snapshot-id}}}
+Deletes the snapshot given by snapshot-id.  
+
 = See Also =
 
   * S3Tools
