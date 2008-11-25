@@ -17,7 +17,11 @@
   * Log messages sent by the instances are collected and displayed.
 
 = Acknowledgements =
-This project would not have been possible without James Murty's book _Programming Amazon Web Services_ (O'Reilly 2008).  It uses the access libraries he described in (and provided with) the book.  
+This project would not have been possible without James Murty's book _Programming Amazon Web Services_ It uses the access libraries provided with the book.  
+
+Code adapted from _Programming Amazon Web Services_.  
+Copyright (c) 2008 James Murty.  Used with permission.  All rights reserved. 
+http://oreilly.com/catalog/9780596515812/index.html
 
 !CloudMaster itself is inspired by Lifeguard (http://code.google.com/p/lifeguard), written by David Kavanagh. I redesigned and rewrote it in ruby, so that it could be used without having to install Java.  Many of my ideas were initially based on this design..
  
