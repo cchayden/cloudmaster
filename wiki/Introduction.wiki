@@ -17,7 +17,7 @@
   * Log messages sent by the instances are collected and displayed.
 
 = Acknowledgements =
-This project would not have been possible without James Murty's book _Programming Amazon Web Services_ It uses the access libraries provided with the book.  
+James Murty's book provided the inspiration and also the libraries that are the foundation for this project.  I have included an extended version of those libraries.
 
 Code adapted from _Programming Amazon Web Services_.  
 Copyright (c) 2008 James Murty.  Used with permission.  All rights reserved. 
