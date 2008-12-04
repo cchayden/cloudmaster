@@ -37,7 +37,12 @@ Displays attributes and values of the item with the given name in the given doma
 === put-attributes ===
 {{{put-attributes domain-name item-name [-r] [attribute:value]+}}}
 
-Creates or upates the attributes of the item with the given item-name in the given domain.  If the item does not exist, it is created, otherwise it is updates.  If "-r" is given, attributes values replace those already present, otherwise vaues are added to the existing atributes.  One or moe attribute:value pairs must be given.  The attribute is separated from the value by a colon, which is not part of either the attribute or the value.
+Creates or updates the attributes of the item with the given item-name in the given domain.  If the item does not exist, it is created, otherwise it is updates.  If "-r" is given, attributes values replace those already present, otherwise values are added to the existing attributes.  One or more attribute:value pairs must be given.  The attribute is separated from the value by a colon, which is not part of either the attribute or the value.
+
+=== copy-attributes ===
+{{{copy-attributes from-domain-name from-item-name to-domain-name to-item-name [-r] [attribute]*}}}
+
+Copies the attributes of the item with the given from-item-name in the given from-domain to the item to-item-name in the to-domain.  If attributes are given, only these attributes are copied.  Otherwise all attributes are copied.  If "-r" is given, attributes values replace those already present, otherwise values are added to the existing attributes.  
 
 === delete-attributes ===
 {{{delete-attributes domain-name item-name [attribute[:value]]*}}}
