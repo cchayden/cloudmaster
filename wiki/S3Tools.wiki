@@ -30,9 +30,9 @@ Deletes the bucket of the given name.
 == List Objects ==
 
 === list-objects ===
-{{{list-objects  [prefix [bucket]]}}}
+{{{list-objects  [-l] [prefix [bucket]]}}}
 
-Displays all keys in the given bucket, or in AWS_BUCKET.  If the prefix is given, the display is liited to keys matching the prefix.
+Displays all keys in the given bucket, or in AWS_BUCKET.  If the prefix is given, the display is liited to keys matching the prefix.  If "-l" is given, a long listing is displayed. A long listing includes the owner, size, and modication date of each key.
 
 === list-object ===
 {{{list-object key [bucket]}}}
