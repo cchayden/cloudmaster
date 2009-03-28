@@ -14,7 +14,7 @@
 ----
 *Symptom*: You cannot log in to an instance or even build an instance because there is some complaint about file permissions being too lenient.
 
-*Action*: Make sure that the key files is not readable except by you.
+*Action*: Make sure that the key files are not readable except by you.
 ----
 *Symptom*: You get a message saying that you cannot run more than 20 instances.
 
