@@ -1,4 +1,7 @@
 = FAQ =
+*Symptom*: Commands fail with a message about not being able to load libssl.
+
+*Action*: In some distros, such as Ubuntu 8.10, you need to load ssl libraries: {{{sudo apt-get install libopenssl-ruby}}}.
 
 *Symptom*: When building an instance or when running !CloudMaster, there a complaint about aws_accesskey or aws_secret_key.
 
