@@ -18,7 +18,7 @@ First, you need to build suitable images.  I will leave this to you -- it is you
   * If you name the queues, security groups, and images appropriately, the base classes will build many of the configuration parameters correctly for you.  The primes sample has everything built to convention.  The fibonacci sample does not -- it uses "fib" almost everywhere (queue names, security group name, active set key name) but uses "fibonacci" for the image name.  [http://code.google.com/p/cloudmaster/source/browse/trunk/examples/config.rb config.rb] illustrates how to override this one parameter.
 
 == Running !CloudMaster==
-Once you have set up instances, you can control them with CloudMaster.  You need to create a configuration file to tell it what to run.  Copy {{{cloudmaster/examples/aws-config.ini}}} and {{{cloudmaster/examples/config.ini}}} to  your home directory, and fill in the keys and other information in {{{aws_config.ini}}}.  Then you can run {{{run-cloudmaster}}} to start everything up.
+Once you have set up instances, you can control them with !CloudMaster.  You need to create a configuration file to tell it what to run.  Copy {{{cloudmaster/examples/aws-config.ini}}} and {{{cloudmaster/examples/config.ini}}} to  your home directory, and fill in the keys and other information in {{{aws_config.ini}}}.  Then you can run {{{run-cloudmaster}}} to start everything up.
 
 == Create Configuration Files ==
 
