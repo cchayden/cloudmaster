@@ -39,11 +39,11 @@ Sends the message to the given queue.  The message may be any string, but make s
 === receive-queue ===
 {{{receive-queue name}}}
 
-Receives a message from the queue and dislays it.
+Receives a message from the queue and displays it, and deletes it.  
 === dump-queue ===
 {{{dump-queue name}}}
 
-Reads repeatedly from the queue, displaying the messages, until the queue is empty.
+Reads and deletes repeatedly from the queue, displaying the messages, until the queue is empty.
 
 = See Also =
 
