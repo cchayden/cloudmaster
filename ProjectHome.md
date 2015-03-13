@@ -1,0 +1,3 @@
+Creates, terminates, and monitors Amazon EC2 instances. Creates more instance to meet increased demand, and terminates them when they are no longer needed. Any number of pools of instances may be managed. Provides periodic status reports. Three policies are provided: a fixed size pool policy, a job-oriented batch policy, and a resource-limited stateful policy. The user can define additional policies.
+
+[Learn More](Introduction.md)
